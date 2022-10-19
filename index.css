@@ -63,5 +63,7 @@ div.info{
 }
 div.chart__container{
   background-color: #ddd;
-  height: 200px;
+  height: 320px;
+  width: 70%;
+  margin-top: 2rem;
 }
