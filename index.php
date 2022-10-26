@@ -1,15 +1,15 @@
 <html>
   <head>
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./libs/ajax.css" />
     <link href="sidebars.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet"> 
     <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      src="./libs/ajax.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./libs/jquery.js"></script>
   </head>
   <body>
     <main>
@@ -81,7 +81,7 @@
           console.log("Failed to fetch");
         }
       };
-      xmlhttp.open("GET", "../controllers/read.php", true);
+      xmlhttp.open("GET", "./read_insert_data.php", true);
       xmlhttp.send();
       
       const displayChart = (data) =>{
